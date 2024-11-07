@@ -78,7 +78,7 @@ module.exports = ({ strapi }) => ({
   },
 
   getPathFolder() {
-    const config = strapi.config.get('plugin.migrations')
+    const config = strapi.config.get("plugin::migrations");
     return path.resolve(process.cwd(), config.migrationFolderPath)
   },
 
